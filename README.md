@@ -8,13 +8,21 @@
 ###Tasks To Complete
 1. Setup the ES6 support using Babel & its required Presets
     * List the Presets
+        * ["es2015", "react"]
     * List the files required to run react Application
+        * "babel-core": "^6.14.0",
+        * "babel-loader": "^6.2.5",
+        * "babel-preset-es2015": "^6.14.0",
+        * "react": "^15.3.2",
+        * "react-dom": "^15.3.2",
+        * "webpack": "^2.1.0-beta.25",
+        * "webpack-dev-server": "^1.16.1"
 
 2. Webpack Bundling
     * Understand the configurations // Input, Output, Plugins, Loaders, configurations
     * Production/Tests Webpack
     * Hot Module Reload?
-    * Webpack-Dev-Server // middle & hot tiers
+    * webpack-dev-server // middle & hot tiers
 
 3. Configuring the Application to Display React Application
     * React App gets displayed
