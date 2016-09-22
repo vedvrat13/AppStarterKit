@@ -1,0 +1,22 @@
+{
+  "name": "appstarterkit",
+  "version": "1.0.0",
+  "description": "@vedvrat13's appstarterkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": ""
+  },
+  "keywords": [
+    "appstarter",
+    "react",
+    "redux",
+    "mochatesting",
+    "karma"
+  ],
+  "author": "@vedvrat13",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.1.0-beta.25"
+  }
+}
