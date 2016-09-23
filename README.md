@@ -13,6 +13,7 @@
         * "babel-core": "^6.14.0",
         * "babel-loader": "^6.2.5",
         * "babel-preset-es2015": "^6.14.0",
+        * "babel-preset-react": "^6.11.1",
         * "react": "^15.3.2",
         * "react-dom": "^15.3.2",
         * "webpack": "^2.1.0-beta.25",
@@ -36,9 +37,19 @@
     * Populate State in the reducer
 
 5. Unit Testing
-    * Configure the Test framework // mocha
-    * Configure the Assertion library // enzyme & chai
+    * Configure the Test framework - Mocha
+        'mocha --require ignore-styles --compilers js:babel-register --require ./test/testSetup.js -R landing --recursive ./{PATH}'
+    * Configure the Assertion library
+        enzyme - should, mount, render
+        chai - expect
     * Run the Tests
+        * "chai": "^3.5.0",
+        * "enzyme": "^2.4.1",
+        * "ignore-styles": "^5.0.1",
+        * "jsdom": "^9.5.0",
+        * "mocha": "^3.0.2",
+        * "react": "^15.3.2",
+        * "react-addons-test-utils": "^15.3.2",
 
 6. Configure the Code Coverage
     * Understand the Karma configurations
