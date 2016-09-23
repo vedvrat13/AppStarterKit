@@ -53,7 +53,16 @@
 
 6. Configure the Code Coverage
     * Understand the Karma configurations
-    * PhantomJS output // how it gets displayed
+        karma start will reach out to karma.conf.js
+    * PhantomJS Output // Folder Coverage created with components
+        * "isparta-loader": "^2.0.0",
+        * "json-loader": "^0.5.4",
+        * "karma": "^1.3.0",
+        * "karma-coverage": "^1.1.1",
+        * "karma-mocha": "^1.1.1",
+        * "karma-phantomjs-launcher": "^1.0.2",
+        * "karma-sourcemap-loader": "^0.3.7",
+        * "karma-webpack": "^1.8.0",
 
 7. Selenium Testing
     * Configure the BrowserStack & Saucelabs utility

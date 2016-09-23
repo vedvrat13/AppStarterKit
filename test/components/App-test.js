@@ -13,4 +13,7 @@ describe('<App /> component', () => {
     it('Should render App', () => {
         expect(wrapper.hasClass('appContainer')).equal(true)
     });
+    it('Should render App', () => {
+        expect(wrapper.find('.appContainer').length).equal(1)
+    });
 });
