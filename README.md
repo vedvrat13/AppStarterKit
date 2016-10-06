@@ -20,7 +20,12 @@
         * "webpack-dev-server": "^1.16.1"
 
 2. Webpack Bundling
-    * Understand the configurations // Input, Output, Plugins, Loaders, configurations
+    * Understand the configurations
+        * entry - file entry Point
+        * output - where the chunks will be written
+        * loaders
+        * plugins - htmlwebpackplugin, Dedupe, uglify, ExtractTextPlugin, SplitByPathPlugin, definePlugin
+
     * Production/Tests Webpack
     * Hot Module Reload?
     * webpack-dev-server // middle & hot tiers

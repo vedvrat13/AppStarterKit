@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7 ]> <html lang="en" class="ie6" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>> <![endif]-->
+    <!--[if IE 7 ]>    <html lang="en" class="ie7" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>> <![endif]-->
+    <!--[if IE 8 ]>    <html lang="en" class="ie8" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>> <![endif]-->
+    <!--[if IE 9 ]>    <html lang="en" class="ie9" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <html  <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>> <!--<![endif]-->
+<head>
+        <meta name="description" content="AppStarterKit">
+        <meta name="keywords" content="React, Redux, Webpack, ES6">
+        <meta name="author" content="@vedvrat13">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><%= htmlWebpackPlugin.options.title%></title>
+
+        <script src ='//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.min.js'></script>
+
+        <% for (var css in htmlWebpackPlugin.files.css) { %>
+            <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+        <% } %>
+
+</head>
+<body>
+        <% if (htmlWebpackPlugin.options.unsupportedBrowser) { %>
+            <style>
+                .unsupported-browser { display: none; }
+            </style>
+            <div class="unsupported-browser">
+                Sorry, your browser is not supported.  Please upgrade to
+                the latest version or switch your browser to use this site.
+                See <a href="http://outdatedbrowser.com/">outdatedbrowser.com</a>
+                for options.
+            </div>
+        <% } %>
+
+        <% if (htmlWebpackPlugin.options.appMountIds && htmlWebpackPlugin.options.appMountIds.length > 0) { %>
+            <% for (var index in htmlWebpackPlugin.options.appMountIds) { %>
+                <div id="<%= htmlWebpackPlugin.options.appMountIds[index]%>"></div>
+            <% } %>
+        <% } %>
+
+        <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+            <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+</body>
+</html>
