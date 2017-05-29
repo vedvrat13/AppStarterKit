@@ -2,3 +2,7 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+scripts:
+    - "npm run clean"
+    - "npm run test"
+    - "npm start"
