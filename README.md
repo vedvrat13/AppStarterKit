@@ -1,4 +1,5 @@
 # APP STARTER KIT
+[![Build Status](https://travis-ci.org/vedvrat13/AppStarterKit.svg?branch=master)](https://travis-ci.org/vedvrat13/AppStarterKit)
 
 ###Getting Started
 1. Clone this repository
